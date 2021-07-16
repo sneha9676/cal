@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <div class="outerShell">
+        <H1>Loan EMI Calculator</H1>
+        <form name="loan-form" onsubmit="return calculator()">
+        <div class='loanBlock'>
+         Loan Amount
+         <input type=number id="amount" placeholder="Enter amount" style="border-radius:5px" required>
+        </div>
+          <div class='tenureBlock'>
+         Loan Tenure
+         <input type=number name="tenure" id="tenure" placeholder="Enter months" style="border-radius:5px" required><br>
+          </div>
+          <div class='aprBlock'>
+            Interest Rate
+            <input type="number" name="apr" id="apr" placeholder="NN.NN" style="border-radius:5px" required><br>
+            </div>
+          <div id=buttonBlock>
+        <button style="border-radius:2px">Calculate</button>
+              </div>
+              <div class="button1">
+              <input type="reset" value="Reset">
+            </div>
+        </form>
+        <P id="EMICapt"></P>
+        <script src='script.js'> </script>
+      </div>
+    </body>
+    </html>
